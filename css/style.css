@@ -5,8 +5,66 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', sans-serif;
 }
 html, body{
     min-height: 100%;
+}
+@font-face {
+    font-family: SegoeUI;
+    src: url(../font/segoeui.ttf);
+}
+/*
+    Header / Cabeçalho
+*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 95px;
+    padding: 0 5%;
+}
+header .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .logo-img{
+    background-image: url(../img/logo-clean.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 70px;
+    height: 70px;
+}
+header .logo-texto{
+    margin: 0 10px;
+    font-family: SegoeUI;
+}
+header nav{
+    display: flex;
+    align-items: center;
+}
+header nav a{
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+    margin: 0 13px;
+    transition: .35s all;
+}
+header nav a:hover{
+    color: #FF4500;
+}
+#cotacao{
+    color: #FF4500;
+    font-weight: 500;
+    padding: 7px;
+    border-radius: 7px;
+    border: 3px solid #FF4500;
+    transition: .65s all;
+}
+#cotacao:hover{
+    cursor: pointer;
+    background-color: #FF4500;
+    color: white;
 }
